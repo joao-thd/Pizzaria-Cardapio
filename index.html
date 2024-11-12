@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome -->
+    <title>Pizzaria</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+
+            <h1>Pizzaria</h1>
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name">
+            <br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+            <br><br>
+
+            <h2>Endereço</h2>
+
+            <label for="rua">Rua:</label>
+            <input type="text" id="rua" name="rua" required><br><br>
+
+            <label for="numero">Número:</label>
+            <input type="number" id="numero" name="numero" required><br><br>
+
+            <label for="complemento">Complemento:</label>
+            <input type="text" id="complemento" name="complemento"><br><br>
+
+            <label for="bairro">Bairro:</label>
+            <input type="text" id="bairro" name="bairro" required><br><br>
+
+            <label for="cep">CEP:</label>
+            <input type="text" id="cep" name="cep" required pattern="\d{5}-\d{3}" placeholder="00000-000"><br><br>
+
+            <button type="submit">Enviar</button>
+            <br><br>
+
+            <h1>Pizzaria - Escolha o Tamanho da Pizza</h1>
+
+            <div class="pizza-container">
+                
+                <div class="pizza pequena">
+                    <div class="pizza-img">
+                        <i class="fas fa-pizza-slice"></i> 
+                    </div>
+                    <p>Pequena (4 fatias)</p>
+                </div>
+        
+               
+                <div class="pizza media">
+                    <div class="pizza-img">
+                        <i class="fas fa-pizza-slice"></i> 
+                    </div>
+                    <p>Média (6 fatias)</p>
+                </div>
+        
+             
+                <div class="pizza grande">
+                    <div class="pizza-img">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <p>Grande (8 fatias)</p>
+                </div>
+            </div>
+        
+            <br><br>
+
+            <h2>Sabores</h2>
+            <select name="Sabores" required>
+                <option value="Margarita">Marguerita</option>
+                <option value="Calabresa">Calabresa</option>
+                <option value="Quatro Queijos">Quatro Queijos</option>
+                <option value="Napolitana">Napolitana</option>
+                <option value="Peperoni">Peperoni</option>
+                <option value="Frango com Catupiry">Frango com Catupiry</option>
+                <option value="Carne Seca com Catupiry">Carne Seca com Catupiry</option>
+            </select>
+
+            <br><br>
+
+            <label for="borda">Borda Recheada:</label>
+            <br><br>
+            <label for="sim">Sim</label>
+            <input type="radio" id="sim" name="borda" value="true">
+            <br><br>
+            <label for="nao">Não</label>
+            <input type="radio" id="nao" name="borda" value="false">
+
+        </fieldset>
+    </form>
+</body>
+</html>
